@@ -3948,6 +3948,7 @@ function indexTabInfo() {
     doAjaxCall(url, data, false, function (html) {
         if ($.isEmptyObject(html)) {
 		
+			alert('no data');
             console.log(html);
             $('#main-content').html('Sorry we have an Empty data');
         } else {
