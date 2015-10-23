@@ -3946,6 +3946,7 @@ function indexTabInfo() {
 	
     alert(url);
     doAjaxCall(url, data, false, function (html) {
+	
         if ($.isEmptyObject(html)) {
 		
 			alert('no data');
@@ -4032,7 +4033,12 @@ function indexTabInfo() {
 
         }
         
-    });
+    })
+	error: function(jqXHR, textStatus, errorThrown) {
+  alert(jqXHR);
+  alert(textStatus);
+  alert(errorThrown);
+};
 	alert('done home');
 	getUserAppereance();
     })
