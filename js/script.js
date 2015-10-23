@@ -3920,7 +3920,7 @@ function emailFormsubmission() {
 		}
 
 function indexTabInfo() {
-    
+    alert('inside');
 	
          var stringData;
     var index;
@@ -3946,9 +3946,11 @@ function indexTabInfo() {
     console.log(url);
     doAjaxCall(url, data, false, function (html) {
         if ($.isEmptyObject(html)) {
+		
             console.log(html);
             $('#main-content').html('Sorry we have an Empty data');
         } else {
+			alert('inside data');
             var popdata = '';
             console.log(html);
             var data = '<div class="TopBar"><ul id="headerHome">';
@@ -4029,6 +4031,7 @@ function indexTabInfo() {
         }
         
     });
+	alert('done home');
 	getUserAppereance();
     })
 }
