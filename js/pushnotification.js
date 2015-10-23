@@ -86,7 +86,7 @@ var push = {
     onNotificationAPN: function (event) {
         var pushNotification = window.plugins.pushNotification;
         console.log("Received a notification! " + event.alert);
-        alert("Received a notification! " + event.alert);
+       // alert("Received a notification! " + event.alert);
         console.log("event sound " + event.sound);
         //alert("event sound " + event.sound)
         console.log("event badge " + event.badge);
