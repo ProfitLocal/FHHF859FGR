@@ -13,7 +13,8 @@
         Sumedha Softech
     </author>
 	<access origin="*" />
-        <gap:plugin name="com.gestionaleauto.socialshare" version="0.0.3" />
+	 <gap:plugin name="cordova-plugin-inappbrowser" source="npm"  />
+        
 	<gap:plugin name="com.phonegap.plugins.barcodescanner" />
 	<gap:plugin name="com.phonegap.plugins.pushplugin"  />
         <gap:plugin name="com.adobe.plugins.gaplugin" />
