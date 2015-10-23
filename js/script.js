@@ -3940,10 +3940,11 @@ function indexTabInfo() {
 
         })
     }).done(function() {
-        
+        alert('checked file');
     var url = baseUrl + 'web/web/getHomeHtml/'+id;
     var data = '';
-    console.log(url);
+	
+    alert(url);
     doAjaxCall(url, data, false, function (html) {
         if ($.isEmptyObject(html)) {
 		
